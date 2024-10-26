@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans+Carian&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans+Carian&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-clr: #7ba887;
+    --in-txt: #595e5a;
+    --border: #8a7476;
+    --b-clr: #f50723;
+    --s-clr: #010452;
+
+    --ff: "Merriweather Sans", serif;
+    --ff-i: "Arima", serif;
+
+    --spacer-0: 0 1rem;
+    --spacer-x: 0.85rem;
+    --spacer-m: 2.5rem;
+    --spacer-lg: 12.5rem;
+
+    --br: 4px;
+
+    --df: flex;
+}
+
+#body {
+    width: 100%;
+    height: 100Vh;
+    background-color: var(--bg-clr);
+    display: var(--df);
+    flex-direction: column;
+    gap: var(--spacer-x);
+    padding: var(--spacer-0);
+    /* font-family: url(/Merriweather_Sans/MerriweatherSans-VariableFont_wght.ttf); */
+}
+p{
+    font-family: var(--ff);
+    font-size: var(--spacer-m);
+    margin-top: 5px;
+}
+
+.task-container {
+    width: 100%;
+    height: fit-content;
+    /* background: red; */
+    display: var(--df);
+    gap: var(--spacer-lg);
+    flex-wrap: wrap;
+}
+input, .drop-down {
+    width: 350px;
+    height: 40px;
+    border-radius: var(--br);
+    font-family: var(--ff-i);
+    font-size: var(--spacer-0);
+    color: var(--in-txt);
+    padding: var(--spacer-0);
+    border: none;
+}
+label {
+    font-family: var(--ff);
+}
+#btn {
+    width: 90px;
+    height: auto;
+    padding: 3px 5px;
+    background-color: var(--b-clr);
+    font-weight: bold;
+    border-radius: var(--br);
+    color: var(--s-clr);
+    border: none;
+    cursor: pointer;
+}
+.task-history{
+    display: inline-flex;
+    gap: var(--spacer-x);
+}
+.complete-btn, .incomplete-btn {
+    max-width: 200px;
+    background-color: var(--s-clr);
+    color: #ffff;
+    cursor: pointer;
+}
+.task-btn {
+    display: var(--df);
+    flex-direction: column;
+    gap: var(--spacer-x);
+}
+.task-btn1, .task-btn2 {
+    display: block;
+    max-width: 150px;
+    color: var(--s-clr);
+    cursor: pointer;
+}
