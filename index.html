@@ -10,12 +10,16 @@
     <p>Task Manager</p>
 
     <div class="task-container">
-        <input class="task-id" type="text" name="Task" id="taskId" value="Add a task">
-        <div>
+        <input class="task-id" type="text" name="Task" id="taskId" placeholder="Add a task">
+        <div class="desc-container">
+            <label for="">Description:</label>
+            <textarea name="description" id="desc" placeholder="Description"></textarea>
+        </div>
+        <div class="date-container">
             <label for="">Deadline:</label>
             <input class="task-date" type="date" name="date" id="taskDate">
         </div>
-        <div>
+        <div class="selectbar-container">
             <label for="">Priority:</label>
             <select class="drop-down" name="dropdown" id="taskDropdown">
                 <option value="Low Priority">Low Priority</option>
@@ -24,6 +28,22 @@
             </select>
         </div>
         <button id="btn">Add Task</button>
+    </div>
+    <div id="task-list">
+        <table>
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Task Description</th>
+                    <th>Task Date</th>
+                    <th>Task Priority</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
     </div>
     <div class="task-history">
         <input class="complete-btn" type="button" value="Show Completed Tasks">
